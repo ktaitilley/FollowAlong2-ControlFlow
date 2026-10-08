@@ -17,33 +17,33 @@ import java.util.Scanner;
 public class NestedLoops {
     public static void main(String[] args) {
         Scanner scanner = new Scanner(System.in);
-        //
+        //creates a new scanner
         int rows;
-        //
+        //creates a int veriable named rows
         int columns;
-        //
+        //creates a int veriable named  columns
         String symbol = "";
-        //
+        //creates a string veriable named symbol and assigns it to the value
         System.out.println("Enter number of rows:");
-        //
+        //prints the statement
         rows = scanner.nextInt();
-        //
+        // assigns the int inout to rows
         System.out.println("Enter number of columns:");
-        //
+        //prints the statement
         columns = scanner.nextInt();
-        //
+        //assigns the int inout to columns
         System.out.println("Enter symbol to use:");
-        //
+        //prints the statement
         symbol = scanner.next();
-        //
+        //assigns the string inout to symbol
         for (int i = 1; i <= rows; i++) {
-            //
+            // creates a for loop starting at 1
             System.out.println();
-            //
+            //prints the statement
             for (int j = 1; j <= columns; j++) {
-                //
+                //creates a for loop starting at 1 that loops as long as the condions are met for the loop before it.
                 System.out.print(symbol);
-                //
+                //prints the statement
             }
         }
     }

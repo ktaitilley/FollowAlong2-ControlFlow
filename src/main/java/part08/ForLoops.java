@@ -16,14 +16,14 @@ package part08;
 public class ForLoops {
     public static void main(String[] args) {
         for (int i = 10; i >= 0;) {
-            //
+            //creates a for loop that starts at 10
             System.out.println(i);
-            //
+            //prints the statement
             i-=2;
-            //
+            //subtracts 2 from i everytime the loop is completed
         }
         System.out.println("Happy New Year!");
-        //
+        //prints the statement
     }
 
 }
