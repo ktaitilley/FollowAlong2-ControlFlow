@@ -17,36 +17,36 @@ import java.util.Scanner;
 public class LogicalOperators {
     public static void main(String[] args) {
         int temp = 25;
-        //
+        //creates a int variable named temp and assigns it the value
         if (temp > 30) {
-            //
+            //creates a if statement with a condition that temp is more than 30
             System.out.println("It is hot outside!");
-            //
+            //prints the statement
         } else if (temp >= 20 && temp <= 30) {
-            //
+            //adds 2 conditions only true when both are true
             System.out.println("It is warm outside!");
-            //
+            //prints the statement
         } else {
-            //
+            //prints the line if all other conditions are false
             System.out.println("It is cold outside!");
-            //
+            //prints the statement
         }
 
         Scanner scanner = new Scanner(System.in);
-        //
+        //creates a new scanner
         System.out.println("You are playing a game! Press q or Q to quit");
-        //
+        //prints the statement
         String response = scanner.next();
-        //
+        //assigns the input to the string variable
 
         if (!response.equals("q") && !response.equals("Q")) {
-            //
+            //creates a if statement with 2 conditions only true when both are true
             System.out.println("You quit the game");
-            //
+            //prints the statement
         } else {
-            //
+            //prints the line if all other conditions are false
             System.out.println("You are still playing the game *pew pew*");
-            //
+            //prints the statement
         }
     }
 

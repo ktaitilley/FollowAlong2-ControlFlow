@@ -19,31 +19,31 @@ import java.util.Scanner;
 public class WhileLoops {
     public static void main(String[] args) {
         Scanner scanner = new Scanner(System.in);
-        //
+        //creates a new scanner
         String name = "";
-        //
+        //creates a string variable and assigns the value
 
         while (name.isBlank()) {
-            //
+            //creates a while loop that loops untill false.
             System.out.print("Enter your name: ");
-            //
+            //prints the statement
             name = scanner.nextLine();
-            //
+            //updates the variable with the scanners input
 
         }
         System.out.println("Hello " + name);
-        //
+        //prints the statement
 
         do {
-            //
+            // creates a do while loop that does at least one loop before false
             System.out.print("Enter your name: ");
-            //
+            //prints the statement
             name = scanner.nextLine();
-            //
+            //updates the variable with the scanners input
         } while (name.isBlank());
-        //
+        //ends the do while loop if false
         System.out.println("Hello " + name);
-        //
+        //prints the statement
     }
 
 }
