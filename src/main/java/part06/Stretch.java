@@ -1,5 +1,5 @@
 package part06;
-
+import java.util.Scanner;
 // Video: https://www.youtube.com/watch?v=xk4_1vDrzzo&t=4161s
 //        rewatch 69:21–74:54 for if / else if / else, 76:36–80:18 for switch
 // Guide: GUIDE.md in this folder
@@ -10,7 +10,81 @@ package part06;
 
 public class Stretch {
     public static void main(String[] args) {
+        /*
+        b or better
+        medium
+        hard
+         */
+        int score = 85;
+        if (score >= 70) {
+            System.out.println("C or better");
+        } else if (score >= 80) {
+            System.out.println("B or better");
+        } else {
+            System.out.println("Below C");
+        }
 
+        int level = 2;
+        switch (level) {
+            case 1:
+                System.out.println("Easy");
+            case 2:
+                System.out.println("Medium");
+            case 3:
+                System.out.println("Hard");
+                break;
+            default:
+                System.out.println("Unknown");
+        }
+
+        int temp = 72;
+        if (temp >= 80) {
+            System.out.println("Shorts weather");
+        } else if (temp >= 60) {
+            System.out.println("Hoodie weather");
+        }else {
+            System.out.println("Coats weather");
+        }
+
+        int month=4;
+        switch (month) {
+            case 1:
+            case 2:
+                System.out.println("Winter");
+                break;
+            case 3:
+            case 4:
+            case 5:
+                System.out.println("Spring");
+                break;
+            case 6:
+            case 7:
+            case 8:
+                System.out.println("Summer");
+                break;
+            case 9:
+            case 10:
+            case 11:
+                System.out.println("Fall");
+                break;
+            case 12:
+                System.out.println("Winter");
+                break;
+            default:
+                System.out.println("'That is not a month");
+
+        }
+
+
+        Scanner scan = new Scanner(System.in);
+        int battery = scan.nextInt();
+        if (battery < 20) {
+            System.out.println("low battery. Go charge!");
+        } else if (battery < 80) {
+            System.out.println("battery OK");
+        }else {
+            System.out.println("Fully charged");
+        }
     }
 
 }
